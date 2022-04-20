@@ -14,7 +14,7 @@ const TodoList = () =>{
         {text: 'Go to school' , id: 4}
     ]); */ 
 
-    const {todos, addTodo} = useContext(TodoListContext)
+    const {todos, addTodo, removeTodo} = useContext(TodoListContext)
 
     /* const addTodo = (text) => {
         setTodos([
@@ -28,18 +28,22 @@ const TodoList = () =>{
         console.log('use effect ', todos)
     }, [todos]); 
 
+    const handleRemoveTodo = (e) => {
+        const id = e.target.id;
+        removeTodo(id);
+    }
+
     return(
         <div>
-            <ul>
-                {todos.map((todo) => { 
-                    return(
-                        <>
-                        <li key={todo.id}> {todo.text} </li> 
-                        <p> Remove ToDo </p>
-                        </>
-                    )                 
-                })}
-            </ul> 
+            {todos.map((todo) => { 
+                return(
+                    <div key={todo.id}>
+                        <p id = {todo.id} key={todo.id} className='item'> {todo.text} </p> 
+                        <p id = {todo.id} onClick={handleRemoveTodo}> Remove todo </p>
+                    </div>
+                )                 
+            })}
+
             { <AddNewTodo addTodo={addTodo} /> }
         </div>
     )
