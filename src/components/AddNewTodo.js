@@ -14,8 +14,10 @@ const AddNewTodo = ({addTodo}) => {
 
     return(
         <form onSubmit={handleSubmit}> 
-            <input type='text'  value={todos} id='todo' onChange={(e) => setTodos(e.target.value)} /> 
-            <input type='submit' />
+        <div className="ui action input todo">
+            <input type='text'  value={todos} placeholder='New Todo..' onChange={(e) => setTodos(e.target.value)} /> 
+            <button className="ui button" type='submit' > INSERT </button>
+        </div>
         </form>
     )
 }

@@ -4,7 +4,7 @@ export const TodoListContext = createContext();
 
 const TodoListContextProvider = ({children}) => { 
 
-    const [id, setId] = useState(0);
+    const [id, setId] = useState(2);
 
     const addTodo = (text) => {
         setTodos([
@@ -16,10 +16,7 @@ const TodoListContextProvider = ({children}) => {
     };
 
     const [todos, setTodos] = useState([
-        {text: 'Pay bills' , id: 1},
-        {text: 'Do your homework' , id: 2}, 
-        {text: 'Walk your dog' , id: 3},
-        {text: 'Go to school' , id: 4}
+        {text: 'EXAMPLE TODO' , id: 1},
     ]); 
 
     const removeTodo =  (id) => {

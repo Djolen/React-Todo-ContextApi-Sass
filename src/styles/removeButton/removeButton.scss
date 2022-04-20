@@ -1,0 +1,12 @@
+
+.removeTd :hover{
+    transition: opacity 1s;
+    opacity: 50%;
+    cursor: pointer;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+}
+ 
+  

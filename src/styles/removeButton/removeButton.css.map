@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,SAAS,CAAC,MAAM,CAAA;EACZ,UAAU,EAAE,UAAU;EACtB,OAAO,EAAE,GAAG;EACZ,MAAM,EAAE,OAAO;EACf,kBAAkB,EAAE,UAAU;EAC9B,eAAe,EAAE,UAAU;EAC3B,cAAc,EAAE,UAAU;EAC1B,aAAa,EAAE,UAAU;CAC5B",
+    "sources": [
+        "removeButton.scss"
+    ],
+    "names": [],
+    "file": "removeButton.css"
+}

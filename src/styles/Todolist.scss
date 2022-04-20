@@ -1,14 +1,27 @@
+@import "../styles/variables/Variables.scss";
+
+body{
+    font-family: $mainFont; 
+    font-weight: bold;
+    background-color: $backgroudnColor;
+}
+
 .TodoList{
     text-align: center;
-    background-color: blue;
-    margin-left: 10%; 
+    background-color: $greyColor;
+    margin-left: 10%;
     margin-right: 10%;
-    margin-top: 2%; 
-    padding-bottom: 2em;
-    padding-top: 2em; 
+    margin-top: 2%;
+    border-radius: 10px;
+    padding: 2%;
+}; 
 
-    input[type=text]{
-        background-color: red;
-        margin: 2em;
-    }
-};
+.todo{
+    margin-bottom: 2% ;
+}
+
+td{
+    width: 100%;
+}
+
+
