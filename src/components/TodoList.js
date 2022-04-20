@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect, useContext } from "react"; 
 import AddNewTodo from "./AddNewTodo";
 import { TodoListContext } from "../contexts/TodoListContext";
+import "../styles/Todolist.css";
 
 const TodoList = () =>{ 
 
@@ -34,7 +35,7 @@ const TodoList = () =>{
     }
 
     return(
-        <div>
+        <div className="TodoList">
             {
                 todos.length ? (
                     todos.map((todo) => { 
