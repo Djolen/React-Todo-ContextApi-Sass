@@ -35,16 +35,21 @@ const TodoList = () =>{
 
     return(
         <div>
-            {todos.map((todo) => { 
-                return(
-                    <div key={todo.id}>
-                        <p id = {todo.id} key={todo.id} className='item'> {todo.text} </p> 
-                        <p id = {todo.id} onClick={handleRemoveTodo}> Remove todo </p>
-                    </div>
-                )                 
-            })}
-
-            { <AddNewTodo addTodo={addTodo} /> }
+            {
+                todos.length ? (
+                    todos.map((todo) => { 
+                        return(
+                            <div key={todo.id}>
+                                <p id = {todo.id} key={todo.id} className='item'> {todo.text} </p> 
+                                <p id = {todo.id} onClick={handleRemoveTodo}> Remove todo </p>
+                            </div>
+                        )                 
+                    })
+                ) : (
+                    <div> You have no todos </div>
+                )
+            }
+                { <AddNewTodo addTodo={addTodo} /> }
         </div>
     )
 
