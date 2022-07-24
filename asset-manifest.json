@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Todo-ContextApi-Sass/static/css/main.bfbafd54.css",
+    "main.js": "/React-Todo-ContextApi-Sass/static/js/main.0766e261.js",
+    "index.html": "/React-Todo-ContextApi-Sass/index.html",
+    "main.bfbafd54.css.map": "/React-Todo-ContextApi-Sass/static/css/main.bfbafd54.css.map",
+    "main.0766e261.js.map": "/React-Todo-ContextApi-Sass/static/js/main.0766e261.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfbafd54.css",
+    "static/js/main.0766e261.js"
+  ]
+}
